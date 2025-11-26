@@ -1,0 +1,36 @@
+#include<stdio.h>
+int main()
+{
+int item, Chocolates,Chocolate, biscuit, drink, cake, grocery, biscuits, milk, drinks, cakes, groceries, sum;
+Chocolate=20;
+printf(" enter the no of chocolates:");
+scanf("%d ", &item);
+Chocolates =item * Chocolate ;
+biscuit =20;
+printf("enter the no of biscuits :");
+scanf("%d ", &item);
+biscuits =item * biscuit ;
+milk = 60;
+printf(" enter the no of liters of milk:");
+scanf("%d ", &item);
+milk =item * milk;
+drinks = 40;
+printf(" enter the no of drink's :");
+scanf("%d ", &item);
+drinks= item * drink;
+cake =30;
+printf(" enter the no of cake's :");
+scanf("%d ", &item);
+cakes = item * cake;
+grocery =100;
+printf(" enter the no of groceries :");
+scanf("%d ", &item);
+groceries = item * grocery ;
+printf("\n SUPERMARKET BILLING \n");
+printf("\n item\t\tPrice \n");
+printf("\nchocolates\t%d\n, \nbiscuits \t%d\n, \nmilk\t%d\n, \ndrinks \t%d\n, \ncakes\t%d\n,\ngroceries\t%d\n,\nsum\t%d\n");
+sum= Chocolates+biscuits+milk+drinks+cakes+groceries;
+printf(" the total bill amount is: %d ", sum);
+scanf(" %d ", & sum);
+return 0;
+}
