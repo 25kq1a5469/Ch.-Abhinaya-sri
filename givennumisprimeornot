@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <math.h> 
+int main() 
+{
+    int n, Prime = 1; 
+    printf("Enter a number: ");
+    scanf("%d", &n);
+    if (n <= 1) 
+ {
+  Prime = 0; 
+ } 
+   else if (n == 2) 
+  {
+    Prime = 1;
+  }
+    else if (n % 2 == 0) 
+   {
+     Prime = 0;
+   }
+    else  
+{
+  for (int i = 3; i * i <= n; i += 2) 
+{ 
+  if (n % i == 0) 
+ {
+    Prime = 0; 
+    break;       
+ }
+}
+}
+    if (Prime) 
+{
+   printf("%d is a prime number.\n", n);
+}   
+else 
+{
+  printf("%d is not a prime number.\n", n);
+}
+  return 0;
+}
